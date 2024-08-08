@@ -1,0 +1,362 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.store-title {
+    font-size: 24px;
+}
+
+.store-title span {
+    color: rgb(191, 136, 98);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-links li {
+    padding: 10px 20px;
+}
+
+.sidebar-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color behind the image */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.welcome-text p {
+    font-size: 24px;
+}
+
+
+
+.dept h1 {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(121, 61, 18);
+    font-weight: bold;
+}
+
+.dept p {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.dept {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-container #search {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-container #search-button {
+    padding: 10px 20px;
+    background-color: rgb(121, 61, 18);
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-container #search-button:hover {
+    background-color: rgb(121, 61, 18);
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #edf8f7;
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+}
+.card1 {
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 300px;
+    height: 420px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card1 img {
+    width: 100%;
+    height: 300px;
+}
+.card1 h1 {
+   
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.btn__9 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px 40px 10px 40px;
+    color: rgb(121, 61, 18);
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid rgb(121, 61, 18);
+    border-radius: 20em;
+    margin: 30px 50px 5px 50px;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.btn__9:hover {
+    color: #ffffff;
+    background: rgb(115, 55, 12);
+    border: 1px solid rgb(121, 61, 18);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px rgb(228, 147, 88), 0 0 20px rgb(219, 144, 90), 0 0 50px rgb(227, 154, 102),
+        0 0 100px rgb(213, 137, 82);
+}
+
+.btn__9 svg {
+    margin-right: 8px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.last {
+    background-color: rgb(147, 81, 33);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last h1,
+.last h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.last p{
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
